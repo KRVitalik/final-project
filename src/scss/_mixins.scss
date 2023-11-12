@@ -1,0 +1,17 @@
+// mixins(transition, conrainer....)
+
+@mixin transition() {
+    transition-property: background-color, border-color, fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+};
+
+@mixin container() {
+    display: block;
+
+    max-width: 768px;
+    
+    margin: 0 auto;
+
+    padding: 0 20px;
+};

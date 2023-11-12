@@ -1,0 +1,51 @@
+@import '../../scss/variables';
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.section {
+    width: 320px;
+    padding: 40px 20px 0 20px;
+}
+
+.exercises_category_title{
+    color: $snow-white;
+    
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17; /* 116.667% */
+    margin-bottom: 20px;
+    }
+
+@media screen and (min-width: 375px) {
+    .section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .exercises_category_title{
+        margin-bottom: 0;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 72px 32px 0 32px;
+        margin-bottom: 64px;
+    }
+
+    .exercises_category_title{
+        font-size: 32px;
+        line-height: 1.375; /* 137.5% */
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .section {
+            padding: 72px 96px 0 32px;
+            margin-bottom: 64px;
+        }
+    }

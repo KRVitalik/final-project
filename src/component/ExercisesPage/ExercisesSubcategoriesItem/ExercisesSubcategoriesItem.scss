@@ -1,0 +1,68 @@
+@import '../../../scss/variables';
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+
+.ExercisesSubcategoriesItem_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 80px 20px;
+}
+
+.ExercisesSubcategoriesItem_info{
+    position: absolute;
+}
+
+.ExercisesSubcategoriesItem_name {
+    color: #EFEDE8;
+
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2; /* 120% */
+    text-align: center;
+}
+
+.ExercisesSubcategoriesItem_filter {
+    color: rgba(239, 237, 232, 0.40);
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width: 375px) {
+.ExercisesSubcategoriesItem_container{
+    align-items: center;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .ExercisesSubcategoriesItem_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        column-gap: 16px;
+        padding: 0 32px 78px 32px;
+    }
+
+        .ExercisesSubcategoriesItem_name {
+            font-size: 24px;
+            line-height: 1.33; /* 133.333% */
+        }
+        
+@media screen and (min-width: 1440px) {
+.ExercisesSubcategoriesItem_container{
+    padding: 0 95px 92px 96px;
+    margin: 0 auto;
+}
+}
+};
