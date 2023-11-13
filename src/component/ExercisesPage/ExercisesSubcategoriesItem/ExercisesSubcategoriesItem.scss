@@ -2,10 +2,49 @@
 @import '../../../scss/colors';
 @import '../../../scss/mixins';
 
-.ExercisesSubcategoriesItem_container{
+.slick-dots .slick-active{
+width: 14px;
+height: 14px;
+background-color: #E6533C;
+border-radius: 50%;
+}
+
+.slick-dots li{
+text-align: center;
+width: 14px;
+height: 14px;
+border-radius: 50%;
+}
+
+.slick-dots li button{
+    width: 14px;
+    height: 14px;
+    background-color: #EFEDE81A;
+    border-radius: 50%;
+    color: #EFEDE81A;
+    &::before{
+    width: 14px;
+    height: 14px;
+    content: '';
+    }
+}
+
+.slick-initialized .slick-slide{
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    flex-direction: column;
+}
+
+.slick-slide .slick-active .slick-cloned{
+    width: 100px !important ;
+}
+
+.slick-slider .slick-track{
+    display: flex;
+    gap: 5px;
+}
+
+.ExercisesSubcategoriesItem_container{
     padding: 0 20px 80px 20px;
 }
 
@@ -46,6 +85,14 @@
 }
 
 @media screen and (min-width: 768px) {
+    .slick-initialized .slick-slide{
+        gap: 32px;
+    }
+    
+    .slick-slider .slick-track{
+        gap: 16px;
+    }
+
     .ExercisesSubcategoriesItem_container{
         flex-direction: row;
         flex-wrap: wrap;

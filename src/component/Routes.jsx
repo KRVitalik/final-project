@@ -5,7 +5,7 @@ const ExercisesSubcategoriesItem = lazy(() => import('./ExercisesPage/ExercisesS
 
 const routes = {
   EXERCISES_ROUTE: '/exercises',
-  EXERCISES_ROUTE_NAME: '/exercises/:name',
+  EXERCISES_ROUTE_NAME: 'exercises/:name',
 };
 
 
@@ -13,16 +13,16 @@ const appRoutes = [
     {
     path: routes.EXERCISES_ROUTE,
     element: <ExercisesPage />,
+    // children: [
+    //   {
+    //     path: routes.EXERCISES_ROUTE_NAME,
+    //     element: <ExercisesSubcategoriesItem />,
+    //   },
+    // ],
   },
   {
     path: `${routes.EXERCISES_ROUTE_NAME}`,
     element: <ExercisesSubcategoriesItem />,
   },
-  // children: [
-  //   {
-  //     path: `${routes.EXERCISES_ROUTE}/:name`,
-  //     element: <ExercisesSubcategoriesItem />,
-  //   },
-  // ],
 ]
 export default appRoutes;
